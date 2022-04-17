@@ -12,6 +12,7 @@ import Footer from "./components/Footer/Footer";
 import Services from "./components/Services/Services";
 import "bootstrap/dist/css/bootstrap.min.css";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
+import NotFound from "./components/Utilities/Notfound/Notfound";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

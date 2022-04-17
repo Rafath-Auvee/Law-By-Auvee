@@ -28,6 +28,7 @@ const Header = () => {
             <CustomLink to="/login">Login</CustomLink>
           )}
           <CustomLink to="/checkout">Checkout</CustomLink>
+          
         </div>
       </nav>
     </div>
