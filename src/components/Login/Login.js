@@ -47,7 +47,7 @@ const Login = () => {
     }
 
     const navigateRegister = event => {
-        navigate('/register');
+        navigate('/signup');
     }
 
     const resetPassword = async () => {

@@ -1,6 +1,7 @@
 import { signOut } from "firebase/auth";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import auth from "../../firebase.init";
 import CustomLink from "../CustomLink/CustomLink";
 import "./Header.css";
@@ -22,12 +23,12 @@ const Header = () => {
           <CustomLink to="/about">About</CustomLink>
           <CustomLink to="/services">Services</CustomLink>
           <CustomLink to="/blog">Blog</CustomLink>
+          <CustomLink to="/checkout">Checkout</CustomLink>
           {user ? (
-            <button onClick={handleSignOut}>Sign out</button>
+            <button className="signout" onClick={handleSignOut}>Sign out</button>
           ) : (
             <CustomLink to="/login">Login</CustomLink>
           )}
-          <CustomLink to="/checkout">Checkout</CustomLink>
           
         </div>
       </nav>
