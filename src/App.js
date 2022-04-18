@@ -13,6 +13,7 @@ import Services from "./components/Services/Services";
 import "bootstrap/dist/css/bootstrap.min.css";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import NotFound from "./components/Utilities/Notfound/Notfound";
+import Thanks from "./components/Thanks/Thanks";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/thanks" element={<Thanks/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

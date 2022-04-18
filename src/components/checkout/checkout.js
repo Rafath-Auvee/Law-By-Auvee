@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import auth from "../../firebase.init";
 import "./checkout.css"
 
@@ -27,7 +28,7 @@ const Shipment = () => {
     const handleCreateUser = event =>{
         event.preventDefault();
         const shipping = {name, email, address, phone};
-        console.log(shipping);
+        
     }
 
     return (
@@ -52,7 +53,9 @@ const Shipment = () => {
                         <input onBlur={handlePhoneBlur} type="text" name="phone" id="" required/>
                     </div>
                     <p style={{color: 'red'}}>{error}</p>
-                    <input className='form-submit' type="submit" value="Add Shipping"  required/>
+                    <Link to="/thanks">
+                        <button className='btn btn-dark'>Proceed Checkout</button>
+                    </Link>
                 </form>
                 
             </div>

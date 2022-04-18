@@ -36,6 +36,7 @@ const Login = () => {
 
     if (error) {
         errorElement = <p className='text-danger'>Error: {error?.message}</p>
+        
     }
 
     const handleSubmit = event => {
@@ -44,6 +45,7 @@ const Login = () => {
         const password = passwordRef.current.value;
 
         signInWithEmailAndPassword(email, password);
+        toast('Welcome!!!');
     }
 
     const navigateRegister = event => {
