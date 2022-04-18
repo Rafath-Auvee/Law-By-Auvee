@@ -1,5 +1,5 @@
-# Independent service provider website for writer
-# Link : https://auvee-assignment-10.web.app
+# Independent service provider website for lawyer
+# Link : https://strong-nasturtium-33cc45.netlify.app
 
 ## Features
 -Hamburger menu
